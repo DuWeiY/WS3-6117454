@@ -14,3 +14,17 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def serial_sum(x,y=None):
+    num=0
+    if y is None:
+        for i in range(x+1):
+            num += i
+        return num
+    else:
+        for i in range(x,y+1):
+            num += i
+        return num
+
+
+print(serial_sum(4))
+print(serial_sum(2,4))
